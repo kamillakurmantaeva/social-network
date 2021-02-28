@@ -1,10 +1,11 @@
 import React from 'react';
+import MyPosts from './MyPosts/MyPosts';
 import s from './Profile.module.css';
 
 const Profile = () => {
   return (
-    <div className={s.content}>
-      <div>
+    <div>
+      <div className={s.img}>
         <img
           src="https://eskipaper.com/images/metal-wallpaper-11.jpg"
           className=""
@@ -12,14 +13,7 @@ const Profile = () => {
         />
       </div>
       <div>ava</div>
-      <div>
-        My posts
-        <div>New post</div>
-        <div className={s.posts}>
-          <div className={s.item}>post 1</div>
-          <div className={s.item}>post 2</div>
-        </div>
-      </div>
+      <MyPosts />
     </div>
   );
 };
